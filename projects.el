@@ -29,6 +29,20 @@
         (startup-hook     nil)
         (shutdown-hook    nil)))
 
+(project-def "site"
+      '((basedir          "~/projects/site")
+        (src-patterns     ("*.js" "*.py" "*.html" "*.css"))
+        (ignore-patterns  ("*.pyc"))
+        (tags-file        "~/tmp/projects/emacs/tags")
+        (file-list-cache  "~/tmp/projects/emacs/files")
+        (open-files-cache "~/tmp/projects/emacs/open-files")
+        (vcs              git)
+        (compile-cmd      "ant")
+        (ack-args         "--java")
+        (startup-hook     nil)
+        (shutdown-hook    nil)))
+
+
 ;; Frayman Group Inc
 
 (project-def "stikeman"   
