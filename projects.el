@@ -16,7 +16,18 @@
 
 ;; Mine
 
-
+(project-def "emacs"
+      '((basedir          "~/projects/emacs")
+        (src-patterns     ("*.el"))
+        (ignore-patterns  ("*.elc"))
+        (tags-file        "~/tmp/projects/emacs/tags")
+        (file-list-cache  "~/tmp/projects/emacs/files")
+        (open-files-cache "~/tmp/projects/emacs/open-files")
+        (vcs              git)
+        (compile-cmd      "ant")
+        (ack-args         "--java")
+        (startup-hook     nil)
+        (shutdown-hook    nil)))
 
 ;; Frayman Group Inc
 
