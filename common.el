@@ -1,21 +1,20 @@
 
 (let ((cygwin "c:/cygwin/bin")
-      (vs "c:/Program Files/Microsoft Visual Studio 10.0/Common7/IDE")
-      (python "c:/python26")
       (scripts "~/bin"))
 
     (setq exec-path (cons cygwin exec-path))
-    (setenv "PATH" (concat scripts ";" python ";" vs ";" cygwin ";" (getenv "PATH")))
+    (setenv "PATH" (concat scripts ";" cygwin ";" (getenv "PATH")))
 
     ;; NT-emacs assumes a Windows shell. Change to baaaaaash.
-    ;; (setq shell-file-name "bash")
-    ;; (setenv "SHELL" shell-file-name)
-    ;; (setq explicit-shell-file-name shell-file-name)
+    (setq shell-file-name "bash")
+    (setenv "SHELL" shell-file-name)
+    (setq explicit-shell-file-name shell-file-name)
 
-    ;; This removes unsightly ^M characters that would otherwise
+    ;; this removes unsightly ^M characters that would otherwise
     ;; appear in the output of java applications.
     (add-hook 'comint-output-filter-functions 'comint-strip-ctrl-m))
 
+(setq null-device "/dev/null")
 
 ;;; UI ;;;
 (setq frame-title-format (list "%f"))   ;frame title shows file name
