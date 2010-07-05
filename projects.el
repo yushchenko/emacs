@@ -63,18 +63,18 @@
         (tags-file        "c:/home/tmp/projects/framework/.tags")
         (file-list-cache  "c:/home/tmp/projects/framework/.files")
         (open-files-cache "c:/home/tmp/projects/framework/.open-files")
-        (compile-cmd      "c:/home/bin/compile-samples.bat")
+        (compile-cmd      "c:/home/bin/compile-flow.bat")
         (startup-hook     nil)
         (shutdown-hook    nil)))
 
-(project-def "samples"
-      '((basedir          "c:/Projects/Framework/DEV/Samples/Application/WebApplication")
+(project-def "flow"
+      '((basedir          "c:/Projects/Flow/DEV/Samples/TFG.CompliGuard.WebSample")
         (index-find-cmd   "find '.' -type f -not \\( -path '*/.svn/*' -o -path '*/obj/*' -o -path '*/bin/*' -o -path '*/Log/*' -o -path '*/Ant/*' -o -name '*~' -o  -name '*.user' -o  -name '*.png' -o  -name '*.gif' -o  -name '*.csproj' -o  -name '*.jar'  \\)")
         (grep-find-cmd    "find '.' -type f -not \\( -path '*/.svn/*' -o -path '*/obj/*' -o -path '*/bin/*' -o -path '*/Log/*' -o -path '*/Ant/*' -o -path '*/Libs/*' -o -name '*~' -o  -name '*.user' -o  -name '*.png' -o  -name '*.gif' -o  -name '*.csproj' -o  -name '*.jar' \\) -print0")
-        (tags-file        "c:/home/tmp/projects/samples/.tags")
-        (file-list-cache  "c:/home/tmp/projects/samples/.files")
-        (open-files-cache "c:/home/tmp/projects/samples/.open-files")
-        (compile-cmd      "c:/home/bin/build-samples.bat")
+        (tags-file        "c:/home/tmp/projects/flow/.tags")
+        (file-list-cache  "c:/home/tmp/projects/flow/.files")
+        (open-files-cache "c:/home/tmp/projects/flow/.open-files")
+        (compile-cmd      "c:/home/bin/build-flow.bat")
         (startup-hook     nil)
         (shutdown-hook    nil)))
 
