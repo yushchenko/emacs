@@ -28,6 +28,7 @@
 (setq blink-cursor-mode nil)
 (setq-default truncate-lines t)         ;don't wrap long lines
 (setq make-backup-files nil)            ;prevent backup file creation
+(setq history-delete-duplicates t)      ;avoid duplicates in history
 
 ;;; Text Editing ;;;
 (setq-default tab-width 4)              
