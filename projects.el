@@ -58,36 +58,13 @@
 
 (project-def "framework"
       '((basedir          "c:/Projects/")
-        (index-find-cmd   "find './Framework/DEV/Sources/TFG.CompliGuard.Web.Client/' './Flow/DEV/Samples/TFG.CompliGuard.WebSample/' -type f -not \\( -path '*/.svn/*' -o -path '*/obj/*' -o -path '*/bin/*' -o -path '*/Log/*' -o -path '*/Ant/*' -o -name '*~' -o  -name '*.user' -o  -name '*.png' -o  -name '*.gif' -o  -name '*.csproj' -o  -name '*.jar' \\)")
-        (grep-find-cmd    "find './Framework/DEV/Sources/TFG.CompliGuard.Web.Client/' './Flow/DEV/Samples/TFG.CompliGuard.WebSample/' -type f -not \\( -path '*/.svn/*' -o -path '*/obj/*' -o -path '*/bin/*' -o -path '*/Log/*' -o -path '*/Ant/*' -o -path '*/Libs/*' -o -name '*~' -o  -name '*.user' -o  -name '*.png' -o  -name '*.gif' -o  -name '*.csproj'  -o  -name '*.jar' \\) -print0")
+        (index-find-cmd   "find './Framework/DEV/Sources/TFG.CompliGuard.Web.Client/' './Framework/DEV/Sources/TFG.CompliGuard.Web.Mvc.Resources/' './Flow/DEV/Samples/TFG.CompliGuard.WebSample/' -type f -not \\( -path '*/.svn/*' -o -path '*/obj/*' -o -path '*/bin/*' -o -path '*/Log/*' -o -path '*/Ant/*' -o -name '*~' -o  -name '*.user' -o  -name '*.png' -o  -name '*.gif' -o  -name '*.csproj' -o  -name '*.jar' \\)")
+        (grep-find-cmd    "find './Framework/DEV/Sources/TFG.CompliGuard.Web.Client/' './Framework/DEV/Sources/TFG.CompliGuard.Web.Mvc.Resources/' './Flow/DEV/Samples/TFG.CompliGuard.WebSample/' -type f -not \\( -path '*/.svn/*' -o -path '*/obj/*' -o -path '*/bin/*' -o -path '*/Log/*' -o -path '*/Ant/*' -o -path '*/Libs/*' -o -name '*~' -o  -name '*.user' -o  -name '*.png' -o  -name '*.gif' -o  -name '*.csproj'  -o  -name '*.jar' \\) -print0")
         (tags-file        "c:/home/tmp/projects/framework/.tags")
         (file-list-cache  "c:/home/tmp/projects/framework/.files")
         (open-files-cache "c:/home/tmp/projects/framework/.open-files")
         (compile-cmd      "c:/home/bin/compile-flow.bat")
         (startup-hook     nil)
         (shutdown-hook    nil)))
-
-;; (project-def "framework"
-;;       '((basedir          "c:/Projects/Framework/DEV/Sources/TFG.CompliGuard.Web.Client")
-;;         (index-find-cmd   "find '.' -type f -not \\( -path '*/.svn/*' -o -path '*/obj/*' -o -path '*/bin/*' -o -path '*/Log/*' -o -path '*/Ant/*' -o -name '*~' -o  -name '*.user' -o  -name '*.png' -o  -name '*.gif' -o  -name '*.csproj' -o  -name '*.jar' \\)")
-;;         (grep-find-cmd    "find '.' -type f -not \\( -path '*/.svn/*' -o -path '*/obj/*' -o -path '*/bin/*' -o -path '*/Log/*' -o -path '*/Ant/*' -o -path '*/Libs/*' -o -name '*~' -o  -name '*.user' -o  -name '*.png' -o  -name '*.gif' -o  -name '*.csproj'  -o  -name '*.jar' \\) -print0")
-;;         (tags-file        "c:/home/tmp/projects/framework/.tags")
-;;         (file-list-cache  "c:/home/tmp/projects/framework/.files")
-;;         (open-files-cache "c:/home/tmp/projects/framework/.open-files")
-;;         (compile-cmd      "c:/home/bin/compile-flow.bat")
-;;         (startup-hook     nil)
-;;         (shutdown-hook    nil)))
-
-
-;; (project-def "flow"
-;;       '((basedir          "c:/Projects/Flow/DEV/Samples/TFG.CompliGuard.WebSample")
-;;         (index-find-cmd   "find '.' -type f -not \\( -path '*/.svn/*' -o -path '*/obj/*' -o -path '*/bin/*' -o -path '*/Log/*' -o -path '*/Ant/*' -o -name '*~' -o  -name '*.user' -o  -name '*.png' -o  -name '*.gif' -o  -name '*.csproj' -o  -name '*.jar'  \\)")
-;;         (grep-find-cmd    "find '.' -type f -not \\( -path '*/.svn/*' -o -path '*/obj/*' -o -path '*/bin/*' -o -path '*/Log/*' -o -path '*/Ant/*' -o -path '*/Libs/*' -o -name '*~' -o  -name '*.user' -o  -name '*.png' -o  -name '*.gif' -o  -name '*.csproj' -o  -name '*.jar' \\) -print0")
-;;         (tags-file        "c:/home/tmp/projects/flow/.tags")
-;;         (file-list-cache  "c:/home/tmp/projects/flow/.files")
-;;         (open-files-cache "c:/home/tmp/projects/flow/.open-files")
-;;         (compile-cmd      "c:/home/bin/build-flow.bat")
-;;         (startup-hook     nil)
-;;         (shutdown-hook    nil)))
 
 (provide 'projects)
