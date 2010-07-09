@@ -58,8 +58,8 @@
 
 (project-def "framework"
       '((basedir          "c:/Projects/")
-        (index-find-cmd   "find './Framework/DEV/Sources/TFG.CompliGuard.Web.Client/' './Framework/DEV/Sources/TFG.CompliGuard.Web.Mvc.Resources/' './Flow/DEV/Samples/TFG.CompliGuard.WebSample/' -type f -not \\( -path '*/.svn/*' -o -path '*/obj/*' -o -path '*/bin/*' -o -path '*/Log/*' -o -path '*/Ant/*' -o -name '*~' -o  -name '*.user' -o  -name '*.png' -o  -name '*.gif' -o  -name '*.csproj' -o  -name '*.jar' \\)")
-        (grep-find-cmd    "find './Framework/DEV/Sources/TFG.CompliGuard.Web.Client/' './Framework/DEV/Sources/TFG.CompliGuard.Web.Mvc.Resources/' './Flow/DEV/Samples/TFG.CompliGuard.WebSample/' -type f -not \\( -path '*/.svn/*' -o -path '*/obj/*' -o -path '*/bin/*' -o -path '*/Log/*' -o -path '*/Ant/*' -o -path '*/Libs/*' -o -name '*~' -o  -name '*.user' -o  -name '*.png' -o  -name '*.gif' -o  -name '*.csproj'  -o  -name '*.jar' \\) -print0")
+        (index-find-cmd   "find './Framework/DEV/Sources/TFG.CompliGuard.Web.Client/' './Framework/DEV/Sources/TFG.CompliGuard.Web.Mvc/' './Framework/DEV/Sources/TFG.CompliGuard.Web.Mvc.Resources/' './Flow/DEV/Samples/TFG.CompliGuard.WebSample/' -type f -not \\( -path '*/.svn/*' -o -path '*/obj/*' -o -path '*/bin/*' -o -path '*/Log/*' -o -path '*/Ant/*' -o -name '*~' -o  -name '*.user' -o  -name '*.png' -o  -name '*.gif' -o  -name '*.csproj' -o  -name '*.jar' \\)")
+        (grep-find-cmd    "find './Framework/DEV/Sources/TFG.CompliGuard.Web.Client/' './Framework/DEV/Sources/TFG.CompliGuard.Web.Mvc/' './Framework/DEV/Sources/TFG.CompliGuard.Web.Mvc.Resources/' './Flow/DEV/Samples/TFG.CompliGuard.WebSample/' -type f -not \\( -path '*/.svn/*' -o -path '*/obj/*' -o -path '*/bin/*' -o -path '*/Log/*' -o -path '*/Ant/*' -o -path '*/Libs/*' -o -name '*~' -o  -name '*.user' -o  -name '*.png' -o  -name '*.gif' -o  -name '*.csproj'  -o  -name '*.jar' \\) -print0")
         (tags-file        "c:/home/tmp/projects/framework/.tags")
         (file-list-cache  "c:/home/tmp/projects/framework/.files")
         (open-files-cache "c:/home/tmp/projects/framework/.open-files")
