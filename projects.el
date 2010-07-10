@@ -37,7 +37,7 @@
         (file-list-cache  "~/tmp/projects/site/files")
         (open-files-cache "~/tmp/projects/site/open-files")
         (vcs              git)
-        (compile-cmd      "ant")
+        (compile-cmd      "~/projects/site/build.bat")
         (ack-args         "--java")
         (startup-hook     nil)
         (shutdown-hook    nil)))
