@@ -55,6 +55,18 @@
         (startup-hook     nil)
         (shutdown-hook    nil)))
 
+(project-def "fe"
+      '((basedir          "~/projects/formEngine")
+        (src-patterns     ("*.js" "*.html" "*.css" "*.xml"))
+        (ignore-patterns  ("*.pyc"))
+        (tags-file        "~/tmp/projects/formEngine/tags")
+        (file-list-cache  "~/tmp/projects/formEngine/files")
+        (open-files-cache "~/tmp/projects/formEngine/open-files")
+        (vcs              git)
+        (compile-cmd      "~/projects/formEngine/build/build.bat")
+        (ack-args         "")
+        (startup-hook     nil)
+        (shutdown-hook    nil)))
 
 ;; Frayman Group Inc
 
