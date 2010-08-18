@@ -71,7 +71,7 @@
 ;; Frayman Group Inc
 
 (project-def "stikeman"   
-      '((basedir          "c:/Projects/CGF/Prototypes/Sources/Flow/Application")
+      '((basedir          "c:/Projects/Flow2")
         (index-find-cmd   "find '.' -type f -not \\( -path '*/.svn/*' -o -path '*/obj/*' -o -path '*/bin/*' -o -path '*/Log/*' -o -name '*~' -o  -name '*.user' -o  -name '*.png' -o  -name '*.gif' -o  -name '*.csproj' \\)")
         (grep-find-cmd    "find '.' -type f -not \\( -path '*/.svn/*' -o -path '*/obj/*' -o -path '*/bin/*' -o -path '*/Log/*' -o -path '*/Libs/*' -o -name '*~' -o  -name '*.user' -o  -name '*.png' -o  -name '*.gif' -o  -name '*.csproj' \\) -print0")
         (tags-file        "c:/home/tmp/projects/stikeman/.tags")
