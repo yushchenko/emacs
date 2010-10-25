@@ -1,20 +1,23 @@
+;; (require 'cl)
+;; (defun maybe-load (file)
+;;   "If we can find file on the load-path, load it and return t, otherwise nil"
+;;   (interactive "sFile: ")
+;;   (load file t t nil))
 
-(let ((cygwin "c:/cygwin/bin")
-      (scripts "~/bin"))
+;; ;;; OS specific ;;;
+;; (let ((hostname (downcase system-name))
+;; ;      (systype  (downcase (symbol-name system-type))))
+;;       (systype "gnu/linux"))
 
-    (setq exec-path (cons cygwin exec-path))
-    (setenv "PATH" (concat scripts ";" cygwin ";" (getenv "PATH")))
+;;   (cond ((string= "windowsnt" system-type)
+;;          (maybe-load (concat "system-windows")))
+;;         ((string= "gnu/linux" system-type)
+;;          (maybe-load (concat "system-linux")))
+;; )
 
-    ;; NT-emacs assumes a Windows shell. Change to baaaaaash.
-    (setq shell-file-name "bash")
-    (setenv "SHELL" shell-file-name)
-    (setq explicit-shell-file-name shell-file-name)
-
-    ;; this removes unsightly ^M characters that would otherwise
-    ;; appear in the output of java applications.
-    (add-hook 'comint-output-filter-functions 'comint-strip-ctrl-m))
-
-(setq null-device "/dev/null")
+(cond ((string= "gnu/linux" system-type) (require 'system-linux))
+      ((string= "windowsnt" system-type) (require 'system-windows))
+)
 
 ;;; UI ;;;
 (setq frame-title-format (list "%f"))   ;frame title shows file name
@@ -42,15 +45,11 @@
 
 ;; color theme >>>
 
-(custom-set-faces
- '(default ((t (:inherit nil :stipple nil :background "SystemWindow" :foreground "SystemWindowText" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 98 :width normal :foundry "outline" :family "Lucida Console")))))
-
 (require 'color-theme)
 (eval-after-load "color-theme"
   '(progn
      (color-theme-initialize)
      (color-theme-twilight)))
-
 
 ;; Dired set up
 (setq ls-lisp-dirs-first t)
@@ -68,7 +67,6 @@
 
 (setq hl-line-face '((t (:background "#27292A"))))
 (add-hook 'dired-mode-hook (lambda () (hl-line-mode 1)))
-
 
 ;; Org mode
 (require 'org-install)
