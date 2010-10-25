@@ -1,22 +1,5 @@
-;; (require 'cl)
-;; (defun maybe-load (file)
-;;   "If we can find file on the load-path, load it and return t, otherwise nil"
-;;   (interactive "sFile: ")
-;;   (load file t t nil))
-
-;; ;;; OS specific ;;;
-;; (let ((hostname (downcase system-name))
-;; ;      (systype  (downcase (symbol-name system-type))))
-;;       (systype "gnu/linux"))
-
-;;   (cond ((string= "windowsnt" system-type)
-;;          (maybe-load (concat "system-windows")))
-;;         ((string= "gnu/linux" system-type)
-;;          (maybe-load (concat "system-linux")))
-;; )
-
 (cond ((string= "gnu/linux" system-type) (require 'system-linux))
-      ((string= "windowsnt" system-type) (require 'system-windows))
+      ((string= "windows-nt" system-type) (require 'system-windows))
 )
 
 ;;; UI ;;;
