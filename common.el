@@ -58,4 +58,15 @@
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
 
+;; Autocomplete
+(add-to-list 'load-path (concat current-dir "lisp/auto-complete"))
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories (concat current-dir "lisp/auto-complete/dict"))
+(ac-config-default)
+
+;; Synonym
+
+(setq *synonym-api-key* "46e35107fb394f704ed7b0f620ea56fb")
+(require 'synonym)
+
 (provide 'common)
