@@ -21,10 +21,22 @@
 (setq-default indent-tabs-mode nil)     ; M-x untabify/tabify, whitespace-mode, whitespace-cleanup
 (setq-default tab-stop-list '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92))
 
-;;; IDo ;;;
+;;; IDo >>>
+
 (require 'ido)
 (ido-mode t)
 (setq ido-enable-flex-matching t)
+
+;; smex >>
+
+(require 'smex)
+(smex-initialize)
+
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; This is your old M-x.
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
 
 ;; color theme >>>
 
