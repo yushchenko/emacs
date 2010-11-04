@@ -56,7 +56,7 @@
         (shutdown-hook    nil)))
 
 (project-def "fe"
-      '((basedir          "~/projects/formEngine")
+      '((basedir          "~/projects/formEngine.js")
         (src-patterns     ("*.js" "*.html" "*.css" "*.xml"))
         (ignore-patterns  ("*.pyc"))
         (tags-file        "~/tmp/projects/formEngine/tags")
@@ -91,5 +91,19 @@
         (compile-cmd      "c:/home/bin/compile-flow.bat")
         (startup-hook     nil)
         (shutdown-hook    nil)))
+
+(project-def "extjs"
+      '((basedir          "~/projects/libs/ext-3.3.0")
+        (src-patterns     ("*.js" "*.html" "*.css" "*.xml"))
+        (ignore-patterns  ("*.pyc"))
+        (tags-file        "~/tmp/projects/extjs/tags")
+        (file-list-cache  "~/tmp/projects/extjs/files")
+        (open-files-cache "~/tmp/projects/extjs/open-files")
+        (vcs              git)
+        (compile-cmd      "")
+        (ack-args         "")
+        (startup-hook     nil)
+        (shutdown-hook    nil)))
+
 
 (provide 'projects)
