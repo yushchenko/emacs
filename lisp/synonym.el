@@ -55,9 +55,11 @@
               (setq synonym-synonyms l))))))
   (reverse synonym-synonyms))
 
-(if (file-exists-p "~/.emacs.d/synonym.cache")
-    (setq synonym-cache (cache-load "~/.emacs.d/synonym.cache"))
-  (setq synonym-cache (make-cache)))
+;; (if (file-exists-p "~/.emacs.d/synonym.cache")
+;;     (setq synonym-cache (cache-load "~/.emacs.d/synonym.cache"))
+;;   (setq synonym-cache (make-cache)))
+
+(setq synonym-cache (make-cache))
 
 (defun synonym-get-synonyms (word)
   (cache-get word 'synonym-fetch-synonyms synonym-cache

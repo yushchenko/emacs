@@ -65,8 +65,8 @@
 (ac-config-default)
 
 ;; Synonym
-
 (setq *synonym-api-key* "46e35107fb394f704ed7b0f620ea56fb")
 (require 'synonym)
+
 
 (provide 'common)
