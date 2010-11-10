@@ -68,6 +68,19 @@
         (startup-hook     nil)
         (shutdown-hook    nil)))
 
+(project-def "fn"
+      '((basedir          "~/projects/fn.js")
+        (src-patterns     ("*.js" "*.html" "*.css" "*.xml"))
+        (ignore-patterns  ("*.pyc"))
+        (tags-file        "~/tmp/projects/fn/tags")
+        (file-list-cache  "~/tmp/projects/fn/files")
+        (open-files-cache "~/tmp/projects/fn/open-files")
+        (vcs              git)
+        (compile-cmd      "")
+        (ack-args         "")
+        (startup-hook     nil)
+        (shutdown-hook    nil)))
+
 ;; Frayman Group Inc
 
 (project-def "stikeman"   
