@@ -46,10 +46,7 @@
      (color-theme-initialize)
      (color-theme-twilight)))
 
-;; Dired set up
-(setq ls-lisp-dirs-first t)
-(setq ls-lisp-verbosity '())            ;not show user and group
-(setq ls-lisp-use-localized-time-format t)
+;; Dired set up >>>
 
 (add-hook 'dired-mode-hook
  (lambda ()
