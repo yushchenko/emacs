@@ -37,7 +37,7 @@
         (file-list-cache  "~/tmp/projects/site/files")
         (open-files-cache "~/tmp/projects/site/open-files")
         (vcs              git)
-        (compile-cmd      "~/projects/site/build/build.bat")
+        (compile-cmd      "~/projects/site/build/build.py")
         (ack-args         "--java")
         (startup-hook     nil)
         (shutdown-hook    nil)))
