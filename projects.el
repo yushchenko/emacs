@@ -101,7 +101,7 @@
         (tags-file        "c:/home/tmp/projects/framework/.tags")
         (file-list-cache  "c:/home/tmp/projects/framework/.files")
         (open-files-cache "c:/home/tmp/projects/framework/.open-files")
-        (compile-cmd      "c:/home/bin/fbuild.bat")
+        (compile-cmd      "c:/Projects/Flow/DEV/build.bat")
         (startup-hook     nil)
         (shutdown-hook    nil)))
 
