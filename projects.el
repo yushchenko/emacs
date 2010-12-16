@@ -81,6 +81,20 @@
         (startup-hook     nil)
         (shutdown-hook    nil)))
 
+(project-def "ns"
+      '((basedir          "~/projects/ns")
+        (src-patterns     ("*.js" "*.html" "*.css" "*.xml" "*.sh"))
+        (ignore-patterns  ("*.pyc"))
+        (tags-file        "~/tmp/projects/ns/tags")
+        (file-list-cache  "~/tmp/projects/ns/files")
+        (open-files-cache "~/tmp/projects/ns/open-files")
+        (vcs              git)
+        (compile-cmd      "ant -buildfile ~/projects/ns/build.xml")
+        (ack-args         "")
+        (startup-hook     nil)
+        (shutdown-hook    nil)))
+
+
 ;; Frayman Group Inc
 
 (project-def "stikeman"   
