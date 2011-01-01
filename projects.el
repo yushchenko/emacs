@@ -42,20 +42,7 @@
         (startup-hook     nil)
         (shutdown-hook    nil)))
 
-(project-def "sample"
-      '((basedir          "~/projects/siteSample")
-        (src-patterns     ("*.js" "*.py" "*.html" "*.css"))
-        (ignore-patterns  ("*.pyc"))
-        (tags-file        "~/tmp/projects/siteSample/tags")
-        (file-list-cache  "~/tmp/projects/siteSample/files")
-        (open-files-cache "~/tmp/projects/siteSample/open-files")
-        (vcs              git)
-        (compile-cmd      "~/projects/siteSample/build/build.bat")
-        (ack-args         "--java")
-        (startup-hook     nil)
-        (shutdown-hook    nil)))
-
-(project-def "fe"
+(project-def "formEngine"
       '((basedir          "~/projects/formEngine.js")
         (src-patterns     ("*.js" "*.html" "*.css" "*.xml"))
         (ignore-patterns  ("*.pyc"))
@@ -63,7 +50,7 @@
         (file-list-cache  "~/tmp/projects/formEngine/files")
         (open-files-cache "~/tmp/projects/formEngine/open-files")
         (vcs              git)
-        (compile-cmd      "~/projects/formEngine/build/build.bat")
+        (compile-cmd      "ant -buildfile ~/projects/formEngine.js/build.xml")
         (ack-args         "")
         (startup-hook     nil)
         (shutdown-hook    nil)))
@@ -90,44 +77,6 @@
         (open-files-cache "~/tmp/projects/ns/open-files")
         (vcs              git)
         (compile-cmd      "ant -buildfile ~/projects/ns/build.xml")
-        (ack-args         "")
-        (startup-hook     nil)
-        (shutdown-hook    nil)))
-
-
-;; Frayman Group Inc
-
-(project-def "stikeman"   
-      '((basedir          "c:/Projects/Prototypes/Flow2")
-        (index-find-cmd   "find '.' -type f -not \\( -path '*/.svn/*' -o -path '*/obj/*' -o -path '*/bin/*' -o -path '*/Log/*' -o -name '*~' -o  -name '*.user' -o  -name '*.png' -o  -name '*.gif' -o  -name '*.csproj' \\)")
-        (grep-find-cmd    "find '.' -type f -not \\( -path '*/.svn/*' -o -path '*/obj/*' -o -path '*/bin/*' -o -path '*/Log/*' -o -path '*/Libs/*' -o -name '*~' -o  -name '*.user' -o  -name '*.png' -o  -name '*.gif' -o  -name '*.csproj' \\) -print0")
-        (tags-file        "c:/home/tmp/projects/stikeman/.tags")
-        (file-list-cache  "c:/home/tmp/projects/stikeman/.files")
-        (open-files-cache "c:/home/tmp/projects/stikeman/.open-files")
-        (compile-cmd      "c:/home/bin/build-flow.bat")
-        (startup-hook     nil)
-        (shutdown-hook    nil)))
-
-(project-def "framework"
-      '((basedir          "c:/Projects/")
-        (index-find-cmd   "find './Flow/DEV/Sources/TFG.CompliGuard.Web.Client/' './Framework/DEV/Sources/TFG.CompliGuard.Web.Mvc/' './Flow/DEV/Sources/TFG.CompliGuard.Web.Mvc.Resources/' './Flow/DEV/Samples/TFG.CompliGuard.WebSample/' './Flow/DEV/Sources/TFG.CompliGuard.Flow/' -type f -not \\( -path '*/.svn/*' -o -path '*/obj/*' -o -path '*/bin/*' -o -path '*/Log/*' -o -path '*/Ant/*' -o -name '*~' -o  -name '*.user' -o  -name '*.png' -o  -name '*.gif' -o  -name '*.csproj' -o  -name '*.jar' \\)")
-        (grep-find-cmd    "find './Flow/DEV/Sources/TFG.CompliGuard.Web.Client/' './Framework/DEV/Sources/TFG.CompliGuard.Web.Mvc/' './Flow/DEV/Sources/TFG.CompliGuard.Web.Mvc.Resources/' './Flow/DEV/Samples/TFG.CompliGuard.WebSample/' './Flow/DEV/Sources/TFG.CompliGuard.Flow/' -type f -not \\( -path '*/.svn/*' -o -path '*/obj/*' -o -path '*/bin/*' -o -path '*/Log/*' -o -path '*/Ant/*' -o -path '*/Libs/*' -o -name '*~' -o  -name '*.user' -o  -name '*.png' -o  -name '*.gif' -o  -name '*.csproj'  -o  -name '*.jar' \\) -print0")
-        (tags-file        "c:/home/tmp/projects/framework/.tags")
-        (file-list-cache  "c:/home/tmp/projects/framework/.files")
-        (open-files-cache "c:/home/tmp/projects/framework/.open-files")
-        (compile-cmd      "c:/Projects/Flow/DEV/build.bat")
-        (startup-hook     nil)
-        (shutdown-hook    nil)))
-
-(project-def "extjs"
-      '((basedir          "~/projects/libs/ext-3.3.0")
-        (src-patterns     ("*.js" "*.html" "*.css" "*.xml"))
-        (ignore-patterns  ("*.pyc"))
-        (tags-file        "~/tmp/projects/extjs/tags")
-        (file-list-cache  "~/tmp/projects/extjs/files")
-        (open-files-cache "~/tmp/projects/extjs/open-files")
-        (vcs              git)
-        (compile-cmd      "")
         (ack-args         "")
         (startup-hook     nil)
         (shutdown-hook    nil)))
