@@ -81,5 +81,18 @@
         (startup-hook     nil)
         (shutdown-hook    nil)))
 
+(project-def "job"
+      '((basedir          "~/projects/job")
+        (src-patterns     ("*.md" "*.txt"))
+        (ignore-patterns  ())
+        (tags-file        "~/tmp/projects/job/tags")
+        (file-list-cache  "~/tmp/projects/job/files")
+        (open-files-cache "~/tmp/projects/job/open-files")
+        (vcs              git)
+        (compile-cmd      "")
+        (ack-args         "")
+        (startup-hook     nil)
+        (shutdown-hook    nil)))
+
 
 (provide 'projects)
