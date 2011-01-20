@@ -43,14 +43,14 @@
         (shutdown-hook    nil)))
 
 (project-def "formEngine"
-      '((basedir          "~/projects/formEngine.js")
-        (src-patterns     ("*.js" "*.html" "*.css" "*.xml"))
-        (ignore-patterns  ("*.pyc"))
+      '((basedir          "~/projects/formEngine")
+        (src-patterns     ("*.js" "*.html" "*.css" "*.xml" "*.md"))
+        (ignore-patterns  ())
         (tags-file        "~/tmp/projects/formEngine/tags")
         (file-list-cache  "~/tmp/projects/formEngine/files")
         (open-files-cache "~/tmp/projects/formEngine/open-files")
         (vcs              git)
-        (compile-cmd      "ant -buildfile ~/projects/formEngine.js/build.xml")
+        (compile-cmd      "ant -buildfile ~/projects/formEngine/formEngine.js/build.xml")
         (ack-args         "")
         (startup-hook     nil)
         (shutdown-hook    nil)))
