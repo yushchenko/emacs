@@ -94,5 +94,18 @@
         (startup-hook     nil)
         (shutdown-hook    nil)))
 
+(project-def "cw2"
+      '((basedir          "~/projects/casework2prototype")
+        (src-patterns     ("*.js" "*.html" "*.css" "*.xml" "*.md"))
+        (ignore-patterns  ())
+        (tags-file        "~/tmp/projects/casework2prototype/tags")
+        (file-list-cache  "~/tmp/projects/casework2prototype/files")
+        (open-files-cache "~/tmp/projects/casework2prototype/open-files")
+        (vcs              git)
+        (compile-cmd      "")
+        (ack-args         "")
+        (startup-hook     nil)
+        (shutdown-hook    nil)))
+
 
 (provide 'projects)
