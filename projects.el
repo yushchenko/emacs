@@ -81,31 +81,17 @@
         (startup-hook     nil)
         (shutdown-hook    nil)))
 
-(project-def "job"
-      '((basedir          "~/projects/job")
+(project-def "cv"
+      '((basedir          "~/projects/cv")
         (src-patterns     ("*.md" "*.txt"))
         (ignore-patterns  ())
-        (tags-file        "~/tmp/projects/job/tags")
-        (file-list-cache  "~/tmp/projects/job/files")
-        (open-files-cache "~/tmp/projects/job/open-files")
+        (tags-file        "~/tmp/projects/cv/tags")
+        (file-list-cache  "~/tmp/projects/cv/files")
+        (open-files-cache "~/tmp/projects/cv/open-files")
         (vcs              git)
         (compile-cmd      "")
         (ack-args         "")
         (startup-hook     nil)
         (shutdown-hook    nil)))
-
-(project-def "cw2"
-      '((basedir          "~/projects/casework2prototype")
-        (src-patterns     ("*.js" "*.html" "*.css" "*.xml" "*.md"))
-        (ignore-patterns  ())
-        (tags-file        "~/tmp/projects/casework2prototype/tags")
-        (file-list-cache  "~/tmp/projects/casework2prototype/files")
-        (open-files-cache "~/tmp/projects/casework2prototype/open-files")
-        (vcs              git)
-        (compile-cmd      "")
-        (ack-args         "")
-        (startup-hook     nil)
-        (shutdown-hook    nil)))
-
 
 (provide 'projects)
