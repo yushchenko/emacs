@@ -94,7 +94,7 @@
         (startup-hook     nil)
         (shutdown-hook    nil)))
 
-(project-def "cv"
+(project-def "theteaproject"
       '((basedir          "~/projects/theteaproject")
         (src-patterns     ("*.md" "*.txt" "*.js" "*.html" "*.css"))
         (ignore-patterns  ())
