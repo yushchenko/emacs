@@ -94,4 +94,18 @@
         (startup-hook     nil)
         (shutdown-hook    nil)))
 
+(project-def "cv"
+      '((basedir          "~/projects/theteaproject")
+        (src-patterns     ("*.md" "*.txt" "*.js" "*.html" "*.css"))
+        (ignore-patterns  ())
+        (tags-file        "~/tmp/projects/theteaproject/tags")
+        (file-list-cache  "~/tmp/projects/theteaproject/files")
+        (open-files-cache "~/tmp/projects/theteaproject/open-files")
+        (vcs              git)
+        (compile-cmd      "")
+        (ack-args         "")
+        (startup-hook     nil)
+        (shutdown-hook    nil)))
+
+
 (provide 'projects)
