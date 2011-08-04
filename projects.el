@@ -107,5 +107,18 @@
         (startup-hook     nil)
         (shutdown-hook    nil)))
 
+(project-def "wiki"
+      '((basedir          "~/projects/me.wiki")
+        (src-patterns     ("*.md"))
+        (ignore-patterns  ())
+        (tags-file        "~/tmp/projects/wiki/tags")
+        (file-list-cache  "~/tmp/projects/wiki/files")
+        (open-files-cache "~/tmp/projects/wiki/open-files")
+        (vcs              git)
+        (compile-cmd      "")
+        (ack-args         "")
+        (startup-hook     nil)
+        (shutdown-hook    nil)))
+
 
 (provide 'projects)
