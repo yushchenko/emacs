@@ -120,5 +120,19 @@
         (startup-hook     nil)
         (shutdown-hook    nil)))
 
+(project-def "site2"
+      '((basedir          "~/projects/site")
+        (src-patterns     ("*.js" "*.html" "*.css"))
+        (ignore-patterns  ())
+        (tags-file        "~/tmp/projects/site2/tags")
+        (file-list-cache  "~/tmp/projects/site2/files")
+        (open-files-cache "~/tmp/projects/site2/open-files")
+        (vcs              git)
+        (compile-cmd      "")
+        (ack-args         "")
+        (startup-hook     nil)
+        (shutdown-hook    nil)))
+
+
 
 (provide 'projects)
