@@ -119,13 +119,26 @@
         (startup-hook     nil)
         (shutdown-hook    nil)))
 
-(project-def "s2"
-      '((basedir          "~/projects/s2")
+(project-def "yushchenko.name"
+      '((basedir          "~/projects/yushchenko.name")
         (src-patterns     ("*.js" "*.html" "*.css"))
         (ignore-patterns  ())
-        (tags-file        "~/tmp/projects/s2/tags")
-        (file-list-cache  "~/tmp/projects/s2/files")
-        (open-files-cache "~/tmp/projects/s2/open-files")
+        (tags-file        "~/tmp/projects/yushchenko.name/tags")
+        (file-list-cache  "~/tmp/projects/yushchenko.name/files")
+        (open-files-cache "~/tmp/projects/yushchenko.name/open-files")
+        (vcs              git)
+        (compile-cmd      "")
+        (ack-args         "")
+        (startup-hook     nil)
+        (shutdown-hook    nil)))
+
+(project-def "pomodorox"
+      '((basedir          "~/projects/pomodorox")
+        (src-patterns     ("*.js" "*.html" "*.css"))
+        (ignore-patterns  ())
+        (tags-file        "~/tmp/projects/pomodorox/tags")
+        (file-list-cache  "~/tmp/projects/pomodorox/files")
+        (open-files-cache "~/tmp/projects/pomodorox/open-files")
         (vcs              git)
         (compile-cmd      "")
         (ack-args         "")
