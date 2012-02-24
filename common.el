@@ -1,5 +1,6 @@
 (cond ((string= "gnu/linux" system-type) (require 'system-linux))
       ((string= "windows-nt" system-type) (require 'system-windows))
+      ((string= "darwin" system-type) (require 'system-osx))
 )
 
 ;;; UI ;;;
@@ -36,7 +37,6 @@
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
-
 
 ;; color theme >>>
 
