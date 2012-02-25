@@ -6,4 +6,5 @@ The repository created to keep my Emacs configs in a safe place.
 
 * [Markdown](http://jblevins.org/projects/markdown-mode/)
 * [Deft](http://jblevins.org/projects/deft/)
-
+* [Smex](https://github.com/nonsequitur/smex/)
+* 
