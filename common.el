@@ -77,7 +77,12 @@
 ;; (setq *synonym-api-key* "46e35107fb394f704ed7b0f620ea56fb")
 ;; (require 'synonym)
 
+;; Deft - notes manager
 (require 'deft)
+(setq deft-directory "~/Dropbox/notes")
+(setq deft-text-mode 'markdown-mode)
+(setq deft-use-filename-as-title t)
+(global-set-key [f8] 'deft)
 
 
 (provide 'common)
