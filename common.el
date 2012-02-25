@@ -73,10 +73,6 @@
 (add-to-list 'ac-dictionary-directories (concat current-dir "lisp/auto-complete/dict"))
 (ac-config-default)
 
-;; Synonym
-;; (setq *synonym-api-key* "46e35107fb394f704ed7b0f620ea56fb")
-;; (require 'synonym)
-
 ;; Deft - notes manager
 (require 'deft)
 (setq deft-directory "~/Dropbox/notes")
