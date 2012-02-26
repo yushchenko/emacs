@@ -40,11 +40,11 @@
 
 ;; color theme >>>
 
-(require 'color-theme)
-(eval-after-load "color-theme"
-  '(progn
-     (color-theme-initialize)
-     (color-theme-twilight)))
+;; (require 'color-theme)
+;; (eval-after-load "color-theme"
+;;   '(progn
+;;      (color-theme-initialize)
+;;      (color-theme-twilight)))
 
 ;; Dired set up >>>
 
@@ -57,7 +57,7 @@
 
 (put 'dired-find-alternate-file 'disabled nil)
 
-(setq hl-line-face '((t (:background "#27292A"))))
+;; (setq hl-line-face '((t (:background "#27292A"))))
 (add-hook 'dired-mode-hook (lambda () (hl-line-mode 1)))
 
 ;; Org mode

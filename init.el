@@ -21,3 +21,4 @@
 (require 'programming)
 (require 'projects)
 
+(provide 'init)
