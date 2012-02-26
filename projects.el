@@ -132,6 +132,71 @@
         (startup-hook     nil)
         (shutdown-hook    nil)))
 
+(project-def "smhprototype"
+      '((basedir          "~/projects/smhprototype")
+        (src-patterns     ("*.js" "*.html" "*.css"))
+        (ignore-patterns  ())
+        (tags-file        "~/tmp/projects/smhprototype/tags")
+        (file-list-cache  "~/tmp/projects/smhprototype/files")
+        (open-files-cache "~/tmp/projects/smhprototype/open-files")
+        (vcs              git)
+        (compile-cmd      "")
+        (ack-args         "")
+        (startup-hook     nil)
+        (shutdown-hook    nil)))
+
+
+(project-def "gfgprototype"
+      '((basedir          "~/projects/gfgprototype")
+        (src-patterns     ("*.js" "*.html" "*.css"))
+        (ignore-patterns  ())
+        (tags-file        "~/tmp/projects/gfgprototype/tags")
+        (file-list-cache  "~/tmp/projects/gfgprototype/files")
+        (open-files-cache "~/tmp/projects/gfgprototype/open-files")
+        (vcs              git)
+        (compile-cmd      "")
+        (ack-args         "")
+        (startup-hook     nil)
+        (shutdown-hook    nil)))
+
+(project-def "mycareer"
+      '((basedir          "~/projects/mycareer")
+        (src-patterns     ("*.js" "*.html" "*.css"))
+        (ignore-patterns  ())
+        (tags-file        "~/tmp/projects/mycareer/tags")
+        (file-list-cache  "~/tmp/projects/mycareer/files")
+        (open-files-cache "~/tmp/projects/mycareer/open-files")
+        (vcs              git)
+        (compile-cmd      "")
+        (ack-args         "")
+        (startup-hook     nil)
+        (shutdown-hook    nil)))
+
+(project-def "itunesstat"
+      '((basedir          "~/projects/itunesstat")
+        (src-patterns     ("*.js" "*.html" "*.css"))
+        (ignore-patterns  ())
+        (tags-file        "~/tmp/projects/itunesstat/tags")
+        (file-list-cache  "~/tmp/projects/itunesstat/files")
+        (open-files-cache "~/tmp/projects/itunesstat/open-files")
+        (vcs              git)
+        (compile-cmd      "")
+        (ack-args         "")
+        (startup-hook     nil)
+        (shutdown-hook    nil)))
+
+(project-def "ffx-framework"
+      '((basedir          "~/projects/ffx-mobile-web-framework")
+        (src-patterns     ("*.js" "*.html" "*.css"))
+        (ignore-patterns  ())
+        (tags-file        "~/tmp/projects/ffx-mobile-web-framework/tags")
+        (file-list-cache  "~/tmp/projects/ffx-mobile-web-framework/files")
+        (open-files-cache "~/tmp/projects/ffx-mobile-web-framework/open-files")
+        (vcs              git)
+        (compile-cmd      "")
+        (ack-args         "")
+        (startup-hook     nil)
+        (shutdown-hook    nil)))
 
 
 (provide 'projects)
