@@ -40,7 +40,9 @@
 
 ;; color theme >>>
 
-;; (require 'color-theme)
+(require 'color-theme)
+(require 'color-theme-solarized)
+(color-theme-solarized-light)
 ;; (eval-after-load "color-theme"
 ;;   '(progn
 ;;      (color-theme-initialize)
