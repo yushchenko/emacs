@@ -1,6 +1,4 @@
-# My Emacs Configuration
-
-The repository created to keep my Emacs configs in a safe place.
+# Emacs Configuration
 
 ## Extensions
 

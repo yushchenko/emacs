@@ -35,5 +35,25 @@
 
 (global-set-key "\C-x\C-q" 'set-buffer-file-writable)
 
+;;
+;; Programming specific for Windows
+;; 
+
+;; CSharp  >>>
+
+(require 'csharp-mode)
+(add-to-list 'auto-mode-alist '("\\.cs$" . csharp-mode))
+
+;; Hmtl  >>>
+
+(add-to-list 'auto-mode-alist '("\\.aspx$" . html-mode))
+(add-to-list 'auto-mode-alist '("\\.ascx$" . html-mode))
+(add-to-list 'auto-mode-alist '("\\.master$" . html-mode))
+
+;; CMD  >>>
+
+(autoload 'cmd-mode "cmd-mode" "CMD mode." t)
+(setq auto-mode-alist (append '(("\\.\\(cmd\\|bat\\)$" . cmd-mode)) auto-mode-alist))
+
 
 (provide 'system-windows)

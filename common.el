@@ -3,11 +3,12 @@
       ((string= "darwin" system-type) (require 'system-osx))
 )
 
-;;; UI ;;;
+;; UI >>>
+
 (setq frame-title-format (list "%f"))   ;frame title shows file name
 (setq inhibit-splash-screen t)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
+(if window-system (tool-bar-mode -1))
+(if window-system (scroll-bar-mode -1))
 (display-time-mode 1)
 (column-number-mode 1)
 (setq scroll-step 1)
@@ -17,12 +18,13 @@
 (setq make-backup-files nil)            ;prevent backup file creation
 (setq history-delete-duplicates t)      ;avoid duplicates in history
 
-;;; Text Editing ;;;
+;; Text Editing >>>
+
 (setq-default tab-width 4)              
 (setq-default indent-tabs-mode nil)     ; M-x untabify/tabify, whitespace-mode, whitespace-cleanup
 (setq-default tab-stop-list '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92))
 
-;;; IDo >>>
+;; IDo >>>
 
 (require 'ido)
 (ido-mode t)
@@ -41,10 +43,8 @@
 ;; color theme >>>
 
 (require 'color-theme)
-(eval-after-load "color-theme"
-  '(progn
-     (color-theme-initialize)
-     (color-theme-twilight)))
+(require 'color-theme-solarized)
+(color-theme-solarized-light)
 
 ;; Dired set up >>>
 
@@ -57,28 +57,30 @@
 
 (put 'dired-find-alternate-file 'disabled nil)
 
-(setq hl-line-face '((t (:background "#27292A"))))
+;; (setq hl-line-face '((t (:background "#27292A"))))
 (add-hook 'dired-mode-hook (lambda () (hl-line-mode 1)))
 
-;; Org mode
+;; Org mode >>>
+
 (require 'org-install)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
 
-;; Autocomplete
+;; Autocomplete >>>
+
 (add-to-list 'load-path (concat current-dir "lisp/auto-complete"))
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories (concat current-dir "lisp/auto-complete/dict"))
 (ac-config-default)
 
-;; Deft - notes manager
+;; Deft - notes >>>
+
 (require 'deft)
 (setq deft-directory "~/Dropbox/notes")
 (setq deft-text-mode 'markdown-mode)
 (setq deft-use-filename-as-title t)
 (global-set-key [f8] 'deft)
-
 
 (provide 'common)

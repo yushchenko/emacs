@@ -4,6 +4,9 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (setq js2-bounce-indent-p t)
 
+;; JSON >>>
+
+(add-to-list 'auto-mode-alist '("\\.json$" . js-mode))
 
 ;; CoffeeScript >>>
 
@@ -17,23 +20,6 @@
 
 (add-hook 'coffee-mode-hook
   '(lambda() (coffee-custom)))
-
-;; CSharp  >>>
-
-(require 'csharp-mode)
-(add-to-list 'auto-mode-alist '("\\.cs$" . csharp-mode))
-
-;; Hmtl  >>>
-
-(add-to-list 'auto-mode-alist '("\\.aspx$" . html-mode))
-(add-to-list 'auto-mode-alist '("\\.ascx$" . html-mode))
-(add-to-list 'auto-mode-alist '("\\.master$" . html-mode))
-
-;; CMD  >>>
-
-(autoload 'cmd-mode "cmd-mode" "CMD mode." t)
-(setq auto-mode-alist (append '(("\\.\\(cmd\\|bat\\)$" . cmd-mode)) auto-mode-alist))
-
 
 ;; Python >>>
 (setq auto-mode-alist (cons '("\\.py$" . python-mode) auto-mode-alist))
